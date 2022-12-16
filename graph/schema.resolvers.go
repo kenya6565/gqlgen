@@ -33,7 +33,9 @@ func (r *queryResolver) Todos(ctx context.Context) ([]*model.Todo, error) {
 	
 	fmt.Println("abc")
 	todo = append(todo, todo1)
-	return todo, nil
+	return r.query.Todos, nil
+
+
 	
 }
 
